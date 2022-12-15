@@ -3,10 +3,12 @@ import { getPosts } from '../utils/mdx-utils';
 
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import About from '../components/About';
 import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
+import Mission from '../components/Mission';
 
 export default function Index({ posts, globalData }) {
   return (
@@ -17,6 +19,8 @@ export default function Index({ posts, globalData }) {
         <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1>
+        <About aboutGutheria={globalData.aboutGutheria}/>
+        <Mission missionGutheria={globalData.missionGutheria}/>
         <ul className="w-full">
           {posts.map((post) => (
             <li
