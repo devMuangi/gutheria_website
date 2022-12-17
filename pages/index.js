@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { getPosts } from '../utils/mdx-utils';
 
 import Footer from '../components/Footer';
+import AppsmithEmbed from '../components/AppsmithEmbed';
 import Header from '../components/Header';
 import About from '../components/About';
 import Layout, { GradientBackground } from '../components/Layout';
@@ -20,6 +21,7 @@ export default function Index({ posts, globalData }) {
           {globalData.blogTitle}
         </h1>
         <About aboutGutheria={globalData.aboutGutheria}/>
+        <AppsmithEmbed/>
         <Mission missionGutheria={globalData.missionGutheria}/>
         <ul className="w-full">
           {posts.map((post) => (
