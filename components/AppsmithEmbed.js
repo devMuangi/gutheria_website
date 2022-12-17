@@ -2,7 +2,7 @@ function AppsmithEmbed() {
     return (
       <div className="App">
         <h3>Iframes in React</h3>
-        <iframe src="https://platform.twitter.com/widgets/tweet_button.html"></iframe>
+        <iframe src="https://app.appsmith.com/app/gutheria/homepage-639870fc038c74195c0ab098?branch=main" height="700" width="100%"></iframe>
       </div>
     );
   }
