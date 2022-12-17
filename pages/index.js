@@ -21,7 +21,7 @@ export default function Index({ posts, globalData }) {
           {globalData.blogTitle}
         </h1>
         <h1 >
-  <Link href="/appsmith/appsmith">gutheria</Link>
+  <Link href="/appsmith/appsmith">gutheria portal</Link>
 </h1>
         <About aboutGutheria={globalData.aboutGutheria}/>
         <Mission missionGutheria={globalData.missionGutheria}/>
