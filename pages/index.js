@@ -24,7 +24,7 @@ export default function Index({ posts, globalData }) {
   <Link href="/appsmith/appsmith">gutheria</Link>
 </h1>
         <About aboutGutheria={globalData.aboutGutheria}/>
-        <AppsmithEmbed/>
+        {/* <AppsmithEmbed/> */}
         <Mission missionGutheria={globalData.missionGutheria}/>
         <ul className="w-full">
           {posts.map((post) => (
