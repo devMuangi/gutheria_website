@@ -15,14 +15,11 @@ export default function Index({ posts, globalData }) {
   return (
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
-      <Header name={globalData.name} />
+      <Header name={globalData.name} /> 
       <main className="w-full">
         <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1>
-        <h1 >
-  <Link href="/appsmith/appsmith">gutheria portal</Link>
-</h1>
         <About aboutGutheria={globalData.aboutGutheria}/>
         <Mission missionGutheria={globalData.missionGutheria}/>
         <ul className="w-full">

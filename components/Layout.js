@@ -1,7 +1,10 @@
 import classNames from 'classnames';
 import { useEffect } from 'react';
 import styles from './Layout.module.css';
-import { Navbar } from './Navbar';
+import  { Navbar }  from './Navbar';
+import   Header  from './Header';
+import  Footer  from './Footer';
+// import { getGlobalData }  from '../utils/global-data';
 
 export function GradientBackground({ variant, className }) {
   const classes = classNames(
@@ -53,9 +56,11 @@ export default function Layout({ children }) {
   return (
     <div className="relative pb-24 overflow-hidden">
       <Navbar/>
+      {/* <Header name={getGlobalData.name} />  */}
       <div className="flex flex-col items-center max-w-2xl w-full mx-auto">
         {children}
       </div>
+      {/* <Footer/> */}
     </div>
   );
 }
