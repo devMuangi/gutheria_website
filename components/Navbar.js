@@ -8,7 +8,6 @@ export const Navbar = ({name}) => {
   return (
     <>
       <nav className='flex justify-center flex-wrap'>
-        <div>
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
           <Link href='/about/about'>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
@@ -32,11 +31,10 @@ export const Navbar = ({name}) => {
             </Link>
             <Link href='/appsmith/appsmith'>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-black'>
-                 <Link href="/appsmith/appsmith">Gutheria portal</Link>
+                 Gutheria portal
               </a>
             </Link>
           </div>
-        </div>
       </nav>
     </>
   );
