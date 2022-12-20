@@ -10,6 +10,7 @@ import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
 import Mission from '../components/Mission';
+import { Navbar } from '../components/Navbar';
 
 export default function Index({ posts, globalData }) {
   return (
@@ -20,6 +21,7 @@ export default function Index({ posts, globalData }) {
         <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1>
+        <Navbar/>
         <About aboutGutheria={globalData.aboutGutheria}/>
         <Mission missionGutheria={globalData.missionGutheria}/>
         <ul className="w-full">

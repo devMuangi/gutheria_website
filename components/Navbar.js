@@ -26,9 +26,14 @@ export const Navbar = ({name}) => {
                 Contact us
               </a>
             </Link>
+            <Link href='/'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                Knowledge Base
+              </a>
+            </Link>
             <Link href='/appsmith/appsmith'>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                 <Link href="/appsmith/appsmith">gutheria portal</Link>
+                 <Link href="/appsmith/appsmith">Gutheria portal</Link>
               </a>
             </Link>
           </div>

@@ -55,7 +55,7 @@ export default function Layout({ children }) {
 
   return (
     <div className="relative pb-24 overflow-hidden">
-      <Navbar/>
+      {/* <Navbar/> */}
       {/* <Header name={getGlobalData.name} />  */}
       <div className="flex flex-col items-center max-w-2xl w-full mx-auto">
         {children}
