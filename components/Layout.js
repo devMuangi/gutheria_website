@@ -56,13 +56,11 @@ export default function Layout({ children, globalData }) {
   }, []);
 
   return (
-    <div className="relative pb-10 overflow-hidden">
-      <div className="flex flex-col items-center max-w-2xl w-full mx-auto">
+      <div className="flex flex-col items-center max-w-2xl w-full mx-auto px-3">
       <Navbar/>
         {children}
         <Footer copyrightText={globalData?.footerText || 'All rights reserved'}/> 
       </div>
-    </div>
   );
 }
 
@@ -72,3 +70,4 @@ export function getStaticProps() {
 
   return { props: { posts, globalData } };
 }
+
