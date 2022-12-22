@@ -4,6 +4,7 @@ export default function Mission({ missionGutheria}) {
   return (
     <header className="pt-20 pb-12">
     <div>
+      <h1>Mission statement</h1>
       <p>{missionGutheria}</p>
     </div>
     </header>

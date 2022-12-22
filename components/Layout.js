@@ -3,8 +3,10 @@ import { useEffect } from 'react';
 import styles from './Layout.module.css';
 import  { Navbar }  from './Navbar';
 import   Header  from './Header';
+import SEO from './SEO';
 import  Footer  from './Footer';
-// import { getGlobalData }  from '../utils/global-data';
+import { getGlobalData }  from '../utils/global-data';
+
 
 export function GradientBackground({ variant, className }) {
   const classes = classNames(
@@ -18,7 +20,7 @@ export function GradientBackground({ variant, className }) {
   return <div className={classes} />;
 }
 
-export default function Layout({ children }) {
+export default function Layout({ children, globalData }) {
   const setAppTheme = () => {
     const darkMode = localStorage.getItem('theme') === 'dark';
     const lightMode = localStorage.getItem('theme') === 'light';
@@ -55,12 +57,19 @@ export default function Layout({ children }) {
 
   return (
     <div className="relative pb-24 overflow-hidden">
-     
-      {/* <Header name={getGlobalData.name} />  */}
       <div className="flex flex-col items-center max-w-2xl w-full mx-auto">
+      <Navbar/>
         {children}
+        <Footer copyrightText={globalData?.footerText || 'All rights reserved'}/> 
       </div>
       {/* <Footer/> */}
     </div>
   );
+}
+
+export function getStaticProps() {
+  const posts = getPosts();
+  const globalData = getGlobalData();
+
+  return { props: { posts, globalData } };
 }
