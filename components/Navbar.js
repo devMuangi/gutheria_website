@@ -5,7 +5,7 @@ export const Navbar = () => {
   
   return (
     <>
-      <nav className='flex flex-wrap sm:flex-row sm:justify-between'>
+      <nav className='flex flex-wrap sm:flex-row sm:justify-around'>
           <Link href='/'>
           <a className='lg:w-auto px-3 py-2 rounded text-white font-bold hover:bg-green-600 hover:text-black'>
                 Home

@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <span className="theme-bejamas" />
       <Component {...pageProps} />
-      </Layout>
+    </Layout>
     </>
   );
 }
