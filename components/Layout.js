@@ -62,7 +62,6 @@ export default function Layout({ children, globalData }) {
         {children}
         <Footer copyrightText={globalData?.footerText || 'All rights reserved'}/> 
       </div>
-      {/* <Footer/> */}
     </div>
   );
 }

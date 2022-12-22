@@ -5,39 +5,37 @@ export const Navbar = () => {
   
   return (
     <>
-      <nav className='flex justify-center flex-wrap'>
-          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+      <nav className='flex flex-wrap sm:flex-row sm:justify-between'>
           <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+          <a className='lg:w-auto px-3 py-2 rounded text-white font-bold hover:bg-green-600 hover:text-black'>
                 Home
-              </a>
+          </a>
             </Link>
           <Link href='/about/about'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                About us
-              </a>
-            </Link>
+          <a className='lg:w-auto px-3 py-2 rounded text-white font-bold hover:bg-green-600 hover:text-black'>
+                About us 
+          </a> 
+          </Link>
             <Link href='/services/services'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Services
+            <a className='lg:w-auto px-3 py-2 rounded text-white font-bold hover:bg-green-600 hover:text-black'>
+              Services
               </a>
             </Link>
             <Link href='/contact/contact'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Contacts
-              </a>
+            <a className='lg:w-auto px-3 py-2 rounded text-white font-bold hover:bg-green-600 hover:text-black'>
+            Contacts
+            </a>
             </Link>
             <Link href='/knowledge/knowledge'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                Knowledge Base
-              </a>
+            <a className='lg:w-auto px-3 py-2 rounded text-white font-bold hover:bg-green-600 hover:text-black'>
+            Knowledge Base
+            </a>
             </Link>
             <Link href='/appsmith/appsmith'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-black'>
+              <a className='lg:w-auto px-3 py-2 rounded text-white font-bold hover:bg-green-600 hover:text-black'>
                  portal
               </a>
             </Link>
-          </div>
       </nav>
     </>
   );
