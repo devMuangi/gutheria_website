@@ -1,6 +1,4 @@
-import { getGlobalData  } from "../../utils/global-data";
-import SEO from "../../components/SEO";
-import Header from "../../components/Header";
+
 
 export default function Payment({ globalData }) {
     return (<>
