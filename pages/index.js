@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import { getPosts } from '../utils/mdx-utils';
 import { InlineWidget } from "react-calendly";
-
-import Footer from '../components/Footer';
-import AppsmithEmbed from '../components/AppsmithEmbed';
 import Header from '../components/Header';
 import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';

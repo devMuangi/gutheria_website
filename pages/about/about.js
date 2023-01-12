@@ -12,6 +12,8 @@ export default function About({ globalData }) {
         <main className="w-full">
       <h1>About us</h1>
       <p>{globalData.aboutGutheria}</p>
+      <h1>Mission Statement</h1>
+      <p>{globalData.missionGutheria}</p>
       </main>
     </>);
   }
