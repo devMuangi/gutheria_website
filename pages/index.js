@@ -1,16 +1,15 @@
 import Link from 'next/link';
 import { getPosts } from '../utils/mdx-utils';
+import { InlineWidget } from "react-calendly";
 
 import Footer from '../components/Footer';
 import AppsmithEmbed from '../components/AppsmithEmbed';
 import Header from '../components/Header';
-import About from '../components/About';
 import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
-import Mission from '../components/Mission';
-import { Navbar } from '../components/Navbar';
+
 
 export default function Index({ posts, globalData }) {
   return (
@@ -23,9 +22,8 @@ export default function Index({ posts, globalData }) {
           {globalData.blogTitle}
         </h1>
         {/* <Navbar/> */}
-        <About aboutGutheria={globalData.aboutGutheria}/>
-        <Mission missionGutheria={globalData.missionGutheria}/>
-        <ul className="w-full">
+        <InlineWidget url="https://calendly.com/muangi/gutheria-pickup" />
+        {/* <ul className="w-full">
           {posts.map((post) => (
             <li
               key={post.filePath}
@@ -50,7 +48,7 @@ export default function Index({ posts, globalData }) {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </main>
       {/* <Footer copyrightText={globalData?.footerText} /> */}
       <GradientBackground
