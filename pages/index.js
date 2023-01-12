@@ -13,14 +13,17 @@ export default function Index({ posts, globalData }) {
     <>
     {/* <Layout> */}
       <SEO title={globalData.name} description={globalData.blogTitle} />
-      <Header name={globalData.name} /> 
+      {/* <Header name={globalData.name} />  */}
       <main className="w-full">
         <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1>
         {/* <Navbar/> */}
         <InlineWidget url="https://calendly.com/muangi/gutheria-pickup" />
-        {/* <ul className="w-full">
+        <br/>
+        <h1 className='text-3xl text-bold'>Read our blogs:</h1>
+        <br/>
+         <ul className="w-full">
           {posts.map((post) => (
             <li
               key={post.filePath}
@@ -45,7 +48,7 @@ export default function Index({ posts, globalData }) {
               </Link>
             </li>
           ))}
-        </ul> */}
+        </ul> 
       </main>
       {/* <Footer copyrightText={globalData?.footerText} /> */}
       <GradientBackground

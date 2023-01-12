@@ -1,10 +1,6 @@
 import Link from 'next/link';
 import { getPosts } from '../../utils/mdx-utils';
-
-import Footer from '../../components/Footer';
-import AppsmithEmbed from '../../components/AppsmithEmbed';
 import Header from '../../components/Header';
-import About from '../../components/About';
 import Layout, { GradientBackground } from '../../components/Layout';
 import ArrowIcon from '../../components/ArrowIcon';
 import { getGlobalData } from '../../utils/global-data';
@@ -17,9 +13,9 @@ export default function Index({ posts, globalData }) {
       <SEO title={globalData.name} description={globalData.blogTitle} /> 
       <Header name={globalData.name} /> 
       <main className="w-full">
-        <h1 className="text-3xl lg:text-5xl text-center mb-12">
+        {/* <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
-        </h1> 
+        </h1>  */}
         <p className='text-1xl text-center mb-12'>Read our blogs from here</p>
         <ul className="w-full">
           {posts.map((post) => (
