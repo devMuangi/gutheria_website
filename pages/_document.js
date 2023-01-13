@@ -5,7 +5,11 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en" className="theme-compiled">
-        <Head />
+      <Head>
+      <link rel="manifest" href="/manifest.json" />
+       <link rel="apple-touch-icon" href="/icon.png"></link>
+  {/* other stuff here */}
+</Head>
         <body
           className={`antialiased text-lg bg-white dark:bg-gray-900 dark:text-white leading-base`}
         >
