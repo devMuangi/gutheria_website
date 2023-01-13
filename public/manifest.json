@@ -3,7 +3,7 @@
     "background_color": "#417505",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/https://gutheria.com",
+    "start_url": "/",
     "name": "gutheria LLC",
     "short_name": "gutheria",
     "description": "a cleaner ,greener environment",
