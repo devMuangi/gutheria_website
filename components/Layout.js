@@ -58,7 +58,7 @@ export default function Layout({ children, globalData }) {
   return (
       <div className="flex flex-col items-center max-w-2xl w-full mx-auto px-1">
       
-       <Header name={globalData?.name || 'gutheria'}/>
+       <Header name={globalData?.name || 'gutheria L.L.C'}/>
       <Navbar/>
       
      
