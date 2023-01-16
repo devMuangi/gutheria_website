@@ -19,7 +19,9 @@ export default function Index({ posts, globalData }) {
           {globalData.blogTitle}
         </h1>
         {/* <Navbar/> */}
+        <div>
         <InlineWidget url="https://calendly.com/muangi/gutheria-pickup" />
+        </div>
         <br/>
         <h1 className='text-3xl text-bold'>Read our blogs:</h1>
         <br/>
