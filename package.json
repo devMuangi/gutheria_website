@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-blog-theme",
-  "description": "A customizable Next.js and Tailwind blog starter. Designed by the Bejamas agency.",
-  "author": "Bejamas and Netlify Inc.",
+  "name": "gutheria",
+  "description": "gutheria app",
+  "author": "david mwangi",
   "contributors": [
     "Charlie Gerard",
     "Prince Wilson",
@@ -44,5 +44,9 @@
     "netlify-plugin-cypress": "~2.2.0",
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.0"
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/devMuangi/gutheria_website",
+  "license": "MIT"
 }
