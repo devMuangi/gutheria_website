@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Button } from '@material-ui/core';
 
-export default function Payment() {
+function STKPushButton() {
   const [phoneNumber, setPhoneNumber] = useState('');
 
   const handleClick = async () => {
@@ -10,7 +11,6 @@ export default function Payment() {
 
     try {
       const response = await fetch("https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest", {
-        mode:'no-cors',
         method: 'POST',
         headers,
         body: JSON.stringify({
@@ -39,7 +39,7 @@ export default function Payment() {
       <div>
         <input type="text" placeholder="Enter phone number" onChange={(e) => setPhoneNumber(e.target.value)}/>
       </div>
-      <button onClick={handleClick}>
+      <Button variant="contained" color="primary" onClick={handleClick}>
         Send STK Push
-      </button>
-    </>)}
+      </Button>
+    </>)
